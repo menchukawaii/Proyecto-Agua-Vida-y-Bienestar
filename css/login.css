@@ -8,14 +8,10 @@ body {
     background-color: mediumaquamarine;
 }
 
-section{
-    background-color: rgba(255,255,255,0.13);
+.form-container{
+    background-color: rgba(255, 255, 255, 0.801);
     padding: 3rem;
     border-radius: 15px;
-}
-
-form{
-    /* min-width: 300px; */
 }
 
 label{
@@ -26,21 +22,36 @@ label{
 input, button{
     display: block;
     margin: 0;
-    padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 input{
+    padding: 10px;
     margin-top: 10px;
     border: none;
     border-bottom: 1px solid black;
 
     background-color: white;
-
+}
+input:focus{
+    border-bottom: 2px solid mediumaquamarine;
+    outline: none;
 }
 
 button{
+    padding: 12px;
     margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+
+    background-color: mediumaquamarine;
+}
+
+button:hover{
+    background-color: white;
 }

@@ -36,8 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <section>
-        <h1>Iniciar Sesión</h1>
+    <section class="form-container">
+        <!-- <h1>Iniciar Sesión</h1> -->
         <form action="login.php" method="post">
             <label>Usuario:
                 <input type="text" name="usuario" placeholder="Nombre de usuario">
