@@ -1,18 +1,33 @@
-@import url(style.css) screen;
+/* @import url(style.css) screen; */
 
 body{
     background-image: url(/img/agua.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
 }
 
-.form-container{
+
+
+/* .form-container{
+    padding: 5rem;
+    border-radius: 0;
+    margin: 0;
+    margin-right: 60%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.801);
+} */
+
+
+
+
+
+/* .form-container{
     background-color: rgba(255, 255, 255, 0.801);
     padding: 2rem;
     border-radius: 15px;
     margin: 2rem;
-
 }
 
 @media (min-width: 768px) {
@@ -21,5 +36,6 @@ body{
         border-radius: 0;
         margin: 0;
         margin-right: 60%;
+        height: 100%;
     }
-}
+} */
