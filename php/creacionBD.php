@@ -14,43 +14,59 @@ try{
         $dsn="mysql:dbname=EcoHuerto;host=127.0.0.1;port=3307";
         $bd=null;
         $bd=new PDO($dsn,$usuario,$clave);
+
+        // TABLA USUARIOS
         $nombreTabla="Usuarios";
         $crearTabla="CREATE TABLE $nombreTabla(
-             usuario VARCHAR(20),
-            nombre VARCHAR(20),
-            apellidos VARCHAR(50),
-            correo VARCHAR(50),
-            passw VARCHAR(50),
-            rol  CHARACTER,
-            PRIMARY KEY(usuario)
-            )";
-             if($bd->query($crearTabla)){
-                echo "<p>Tabla $nombreTabla creada correctamente</p>";
-            }
-             $nombreTabla="Publicaciones";
-              $crearTabla="CREATE TABLE $nombreTabla(
-                id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-                autor VARCHAR(20),
-                asunto VARCHAR(50),
-                contenido VARCHAR(500),
-                autorizado Boolean,
-                PRIMARY KEY(id),
-                FOREIGN KEY (autor) REFERENCES Usuarios(usuario)
-                )";
-             if($bd->query($crearTabla)){
-                echo "<p>Tabla $nombreTabla creada correctamente</p>";
-            }
-            $nombreTabla="Multimedia";
-            $crearTabla="CREATE TABLE $nombreTabla(
-            id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-            ruta VARCHAR(50),
-            id_publicacion INTEGER UNSIGNED,
-            PRIMARY KEY(id),
-            FOREIGN KEY (id_publicacion) REFERENCES Publicaciones(id)
-            )";
-            if($bd->query($crearTabla)){
-                echo "<p>Tabla $nombreTabla creada correctamente</p>";
-            }
+        usuario VARCHAR(20),
+        nombre VARCHAR(20),
+        apellidos VARCHAR(50),
+        correo VARCHAR(50),
+        passw VARCHAR(50),
+        rol  CHARACTER,
+        PRIMARY KEY(usuario)
+        )";
+        if($bd->query($crearTabla)){
+        echo "<p>Tabla $nombreTabla creada correctamente</p>";
+        }
+
+        // TABLA ADMIN
+        $nombreTabla="Admins";
+        $crearTabla="CREATE TABLE $nombreTabla(
+        usuario VARCHAR(20),
+        passwd VARCHAR(20),
+        PRIMARY KEY(usuario)
+        )";
+        if($bd->query($crearTabla)){
+        echo "<p>Tabla $nombreTabla creada correctamente</p>";
+        }
+
+        $nombreTabla="Publicaciones";
+        $crearTabla="CREATE TABLE $nombreTabla(
+        id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+        titulo VARCHAR(50) NOT NULL,
+        autor VARCHAR(20),
+        asunto VARCHAR(50),
+        contenido VARCHAR(500),
+        autorizado Boolean,
+        PRIMARY KEY(id),
+        FOREIGN KEY (autor) REFERENCES Usuarios(usuario)
+        )";
+        if($bd->query($crearTabla)){
+        echo "<p>Tabla $nombreTabla creada correctamente</p>";
+    }
+
+    $nombreTabla="Multimedia";
+    $crearTabla="CREATE TABLE $nombreTabla(
+    id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+    ruta VARCHAR(50),
+    id_publicacion INTEGER UNSIGNED,
+    PRIMARY KEY(id),
+    FOREIGN KEY (id_publicacion) REFERENCES Publicaciones(id)
+    )";
+    if($bd->query($crearTabla)){
+        echo "<p>Tabla $nombreTabla creada correctamente</p>";
+    }
            
        
     
