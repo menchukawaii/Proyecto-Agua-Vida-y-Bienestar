@@ -38,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <section class="form-container">
         <!-- <h1>Iniciar Sesión</h1> -->
-        <form action="login.php" method="post">
-            <label>Usuario:
+        <form action="login.php" method="post" id="form-login">
+            <!-- <label>Usuario: -->
                 <input type="text" name="usuario" placeholder="Nombre de usuario">
-            </label>
-            <label>Contraseña:
+            <!-- </label> -->
+            <!-- <label>Contraseña: -->
                 <input type="password" name="passwd" placeholder="Contraseña">
-            </label>
+            <!-- </label> -->
             <button>Iniciar Sesión</button>
         </form>
     </section>

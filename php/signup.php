@@ -11,27 +11,33 @@
 <body>
     <section class="form-container">
     <!-- <h1>Registro Usuario</h1> -->
-        <form action="signup.php" method="post">
-            <label>Nombre:
-                <input type="text" name="nombre">
-            </label>
-            <label>Apellidos:
-                <input type="text" name="apellidos">
-            </label>
-            <label>Correo:
-                <input type="email" name="correo">
-            </label>
-            <label>Usuario:
-                <input type="text" name="usuario">
-            </label>
-            <label>Contraseña:
-                <input type="password" name="passwd">
-            </label>
-            <label>Confirmar contraseña:
-                <input name="confirmpasswd" type="password">
-            </label>
+        <form action="signup.php" method="post" class="form-signup">
+            <!-- <label>Nombre: -->
+                <input type="text" name="nombre" placeholder="Nombre">
+            <!-- </label> -->
+            <!-- <label>Apellidos: -->
+                <input type="text" name="apellidos" placeholder="Apellidos">
+            <!-- </label> -->
+            <!-- <label>Correo: -->
+                <input type="email" name="correo" placeholder="Correo electrónico">
+            <!-- </label> -->
+            <!-- <label>Usuario: -->
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
+            <!-- </label> -->
+            <!-- <label>Contraseña: -->
+                <input type="password" name="passwd" placeholder="Contraseña">
+            <!-- </label> -->
+            <!-- <label>Confirmar contraseña: -->
+                <input name="confirmpasswd" type="password" placeholder="Confirmar Contraseña">
+            <!-- </label> -->
             <button>Registrarse</button>
         </form>
+        
+        <article class="aside-form-signup">
+            <h1>Únete a nuestro proyecto</h1>
+            <h2>Agrupacion de centros escolares</h2>
+            <h2>Agua Vida y Bienestar</h2>
+        </article>
     </section>
 
 </body>

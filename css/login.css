@@ -3,18 +3,21 @@
 body {
     display: grid;
     place-content: center;
-    height: 96vh; 
+    height: 100vh; 
 
-    background-color: mediumaquamarine;
+    background-image: url(/img/vista-salpicaduras-agua.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .form-container{
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 3rem;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-label{
+/* label{
     display: block;
     padding-top: 20px;
 }
@@ -25,7 +28,7 @@ input, button{
     width: 100%;
     box-sizing: border-box;
     /* border-radius: 5px; */
-}
+/* }
 
 input{
     padding: 10px;
@@ -54,4 +57,4 @@ button{
 
 button:hover{
     background-color: white;
-}
+} */ 

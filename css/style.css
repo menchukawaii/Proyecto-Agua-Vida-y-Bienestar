@@ -1,17 +1,31 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("ttf");
-    font-weight: normal; 
-    font-style: normal;  
+    src: url('/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
-*{
-    font-family: "Montserrat";
-    font-size: 16px;
+:root {
+
+    --lightBlue: #d9e6f2;
+    --darkGreen: #313e04;
+    --green1: rgb(70, 89, 3);
+    --green2: rgb(124, 140, 3);
+    --green3: #cfd605;
+    --yellow: #d6c805;
+    --black: #0b1c11;/*se usa en el nav*/
+    --shadow: #94a3b8;
+    /* --shadow:rgba(0,0,0,0.22); */
 }
+
+* {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -28,36 +42,46 @@ input, button{
     display: block;
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
-    /* border-radius: 5px; */
 }
 
 input{
     padding: 10px;
     margin-top: 10px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
 
-    background-color: white;
+    background-color: transparent;
+}
+input:first-child{
+    margin-top: 0;
 }
 input:focus{
-    border-bottom: 2px solid mediumaquamarine;
+    border-bottom: 2px solid var(--lightBlue);
     outline: none;
 }
 
 button{
-    padding: 12px;
-    margin-top: 30px;
-    border-radius: 50px;
-    border: none;
-    font-size: 1.1rem;
+    font-size: 12px;
     letter-spacing: 0.05rem;
+    text-transform: uppercase;
+
     font-weight: bold;
 
-    background-color: mediumaquamarine;
+    padding: 12px;
+    margin-top: 30px;
+
+    border-radius: 50px;
+    border: 2px solid transparent;
+
+    transition: 80ms ease-in;
+
+    background-color: var(--lightBlue);
+    color: var(--black);
 }
 
 button:hover{
+    border: 2px solid var(--lightBlue);
+    box-shadow: 0 4px 10px var(--shadow);
+    transform: scale(1.05);
     background-color: white;
-    /* background: radial-gradient(circle at 50% 50%, mediumaquamarine, #ffffff); */
 }
