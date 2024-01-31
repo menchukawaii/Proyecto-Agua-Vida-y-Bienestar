@@ -31,6 +31,10 @@
                 <input name="confirmpasswd" type="password" placeholder="Confirmar Contraseña">
             <!-- </label> -->
             <button>Registrarse</button>
+            <article id="go-to-login">
+                <p>Ya estás registrado?</p>
+                <a href="login.php">Inicia Sesión</a>
+            </article>
         </form>
         
         <article class="aside-form-signup">

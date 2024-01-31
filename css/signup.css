@@ -49,6 +49,20 @@ body {
     background-position: center;
 }
 
+#go-to-login{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+#go-to-login a{
+    color: var(--black);
+}
+#go-to-login a:hover{
+    text-shadow: 3px 3px 5px var(--lightBlue);
+    transform: scale(1.05);
+}
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -64,6 +78,7 @@ body {
         justify-content: space-between;
     
         padding: 50px;
+        padding-bottom: 25px;
         width: 50%;
         height: 100%;
     }
