@@ -46,6 +46,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" name="passwd" placeholder="Contraseña">
             <!-- </label> -->
             <button>Iniciar Sesión</button>
+            <article class="link-login-signup">
+                <p>Todavía no tienes cuenta?</p>
+                <a href="signup.php">Registrate</a>
+            </article>
         </form>
     </section>
 

@@ -85,3 +85,17 @@ button:hover{
     transform: scale(1.05);
     background-color: white;
 }
+
+.link-login-signup{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+.link-login-signup a{
+    color: var(--black);
+}
+.link-login-signup a:hover{
+    text-shadow: 3px 3px 5px var(--lightBlue);
+    transform: scale(1.05);
+}
