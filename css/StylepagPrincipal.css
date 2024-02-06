@@ -1,0 +1,41 @@
+#ul1 {
+    list-style: none;
+  }
+
+  #IBQ::before,
+  #IBCF::before,
+  #IPCC::before,
+  #IPJB::before,
+  #IMSIS::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #IBQ::before {
+    background-image: url('../Imagenes/ibq.jpg');
+  }
+
+  #IBCF::before {
+    background-image: url('../Imagenes/IBCF.png');
+  }
+
+  #IPCC::before {
+    background-image: url('../Imagenes/IPCC.png');
+  }
+
+  #IPJB::before {
+    background-image: url('../Imagenes/IPJB.png');
+  }
+
+  #IMSIS::before {
+    background-image: url('../Imagenes/INS Manresa SIS.png');
+  }
+
+  #imagenIN{
+    display: block; margin: auto;
+  }

@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $resultado = $bd->query($sql);
         $count = $resultado->rowCount();
         if ($count == 1) {
-            echo "Usuario conectado";
+            header("Location: /html/paginaPrincipal.html");
         } else {
             echo "Error de búsqueda";
         }
